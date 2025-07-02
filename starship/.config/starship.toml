@@ -1,0 +1,67 @@
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$all\
+$cmd_duration\
+$line_break\
+$character\
+"""
+
+# Fill
+[fill]
+# symbol = " "
+style = "#1e2528"
+
+# Character
+[character]
+success_symbol = '[](cyan)'
+error_symbol = '[](red)'
+
+# Username
+[username]
+style_user = 'green bold'
+style_root = 'black bold'
+format = '󰣇 [$user]($style) [Sedang Ngodonf](yellow) [on](purple) '
+disabled = false
+show_always = true
+aliases = { "corpuser034g" = "ELghaz" }
+
+# Git
+[git_status]
+format = "[[$conflicted](yellow)[$untracked](blue)[$modified$renamed](yellow)[$staged](green)[$deleted](red)($ahead_behind$stashed)]($style)"
+conflicted = " $count "
+untracked = " $count "
+modified = " $count "
+deleted = " $count "
+staged = " $count "
+renamed = " $count "
+stashed = " $count "
+style = "cyan"
+
+[git_branch]
+symbol = " "
+
+# Directory
+[directory]
+style = "blue italic"
+format = "[$path]($style) "
+
+# Languages
+[bun]
+symbol = " "
+style = "white"
+
+[python]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[java]
+symbol = "󰬷 "
+
+[php]
+symbol = " "
