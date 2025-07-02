@@ -65,10 +65,40 @@ cd ~/.dotfiles
 ### 3. Install Dependencies
 ```bash
 # Paket utama
-sudo pacman -S hyprland kitty waybar rofi dunst fish starship mpv neovim qt6ct wl-clipboard grim slurp
-
-# AUR (gunakan paru atau yay)
-paru -S matugen wallust swaync waypaper
+sudo pacman -S hyprland 
+```
+Install package manager buat AUR, bisa Paru atau Yay
+Paru: 
+```bash
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/paru.git ~/paru
+cd ~/paru
+makepkg -si
+```
+Install Semua paket yang dibutuhkan
+```bash
+paru -S --noconfirm \
+  wget unzip gum rsync git figlet xdg-user-dirs \
+  hyprland hyprpaper hyprlock hypridle hyprpicker \
+  noto-fonts noto-fonts-emoji noto-fonts-cjk noto-fonts-extra \
+  xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
+  libnotify kitty qt5-wayland qt6-wayland uwsm fastfetch \
+  eza python-pip python-gobject python-screeninfo tumbler \
+  brightnessctl nm-connection-editor network-manager-applet \
+  gtk4 libadwaita fuse2 imagemagick jq xclip neovim htop \
+  rust cargo blueman grim slurp cliphist nwg-look qt6ct \
+  waybar rofi-wayland polkit-gnome zsh zsh-completions fzf \
+  pavucontrol papirus-icon-theme breeze flatpak swaync gvfs \
+  wlogout hyprshade waypaper grimblast-git bibata-cursor-theme-bin \
+  pacseek otf-font-awesome ttf-fira-sans ttf-fira-code \
+  ttf-firacode-nerd ttf-dejavu nwg-dock-hyprland \
+  checkupdates-with-aur loupe power-profiles-daemon \
+  python-pywalfox
+```
+Install Tools via `cargo`
+```bash
+cargo install matugen
+cargo install wallust
 ```
 
 ### 4. Salin atau Symlink Config
