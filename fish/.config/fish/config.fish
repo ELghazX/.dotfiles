@@ -5,8 +5,6 @@ end
 set -gx EDITOR nvim
 set -e NODE_OPTIONS
 
-set -x GEMINI_API_KEY AIzaSyBiqoV9NlqfqCkyOd2QclLlD27dCjnCetA
-
 set -x GOPATH $HOME/go
 set -x PATH $PATH /usr/local/go/bin $GOPATH/bin
 if status is-interactive
