@@ -23,6 +23,7 @@ Konfigurasi sistem Linux milik pribadi yang digunakan di **CachyOS** dengan wind
 
 Berikut beberapa direktori penting dalam repo ini:
 
+```bash
 .config/
 ├── hypr/ → konfigurasi Hyprland
 ├── rofi/ → launcher dengan tema custom
@@ -40,7 +41,7 @@ Berikut beberapa direktori penting dalam repo ini:
 ├── wl-gout/ → logout GUI
 ├── wal/ → template untuk wal
 └── ...
-
+```
 ---
 
 ## 🚀 Setup dari Awal
