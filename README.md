@@ -1,7 +1,7 @@
 ![desktop](.assets/Screenshot_2025-07-02_22-56-23.png)
 # 🛠️ ElghazX's Dotfiles
 
-Konfigurasi sistem Linux milik pribadi yang digunakan di **CachyOS** dengan window manager **Hyprland**. Setup ini awalnya berbasis dari proyek [ml4w (My Linux 4 Work)](https://github.com/my-linux/my-linux-4-work), lalu dimodifikasi sesuai dengan preferensiku sendiri.
+Konfigurasi sistem Linux milik pribadi yang digunakan di **CachyOS** dengan window manager **Hyprland**. Setup ini awalnya berbasis dari proyek [ml4w (My Linux 4 Work)](https://github.com/mylinuxforwork/dotfiles.git), lalu dimodifikasi sesuai dengan preferensiku sendiri.
 
 ---
 
