@@ -1,0 +1,30 @@
+/*
+Define your quick links for the statusbar here.
+YOu can use icons from here https://fontawesome.com/search?ic=free
+You can reload waybar with SUPER + SHIFT + B
+*/
+{
+ 
+/*
+Don't remove the quicklinkempty
+*/
+    "custom/quicklinkempty": {
+    },
+/*
+Add your quicklinks in your desired order to the status bar
+*/
+    "group/quicklinks": {
+        "orientation": "horizontal",
+        "modules": [
+
+            "custom/quicklink_browser",
+            "custom/quicklink_email",
+            "custom/quicklink_filemanager",
+
+/*
+Don't remove the quicklinkempty
+*/
+            "custom/quicklinkempty"
+        ]
+    }
+}
