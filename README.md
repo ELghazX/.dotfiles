@@ -7,7 +7,6 @@ Konfigurasi sistem Linux milik pribadi yang digunakan di **CachyOS** dengan wind
 
 ## ✨ Fitur Utama
 
-- ✅ Berbasis **CachyOS** (Arch-based, optimized performance)
 - ✅ Menggunakan **Hyprland** (dynamic tiling Wayland WM)
 - ✅ Tema otomatis berdasarkan wallpaper (`matugen`, `wallust`)
 - ✅ Launcher cantik pakai `rofi`
@@ -49,11 +48,21 @@ Berikut beberapa direktori penting dalam repo ini:
 ### 1. Persiapan Sistem
 
 Install CachyOS (atau distro Arch-based lainnya seperti Arch, EndeavourOS, Manjaro). Setelah sistem terpasang:
+
+Update Repository
 ```bash
 sudo pacman -Syu
 ```
 
 Pastikan kamu sudah menginstal package dasar
+
+Install Hyprland
+```bash
+# Paket utama
+sudo pacman -S hyprland 
+```
+
+Install git
 ```bash
 sudo pacman -S git base-devel
 ```
@@ -63,11 +72,8 @@ git clone https://github.com/ElghazX/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 ### 3. Install Dependencies
-```bash
-# Paket utama
-sudo pacman -S hyprland 
-```
 Install package manager buat AUR, bisa Paru atau Yay
+
 Paru: 
 ```bash
 sudo pacman -S --needed base-devel git
@@ -107,12 +113,12 @@ sudo pacman -S stow
 ```
 Kemudian pakai stow untuk mengelola package
 ```bash
-stow hypr rofi waybar dunst swaync starship kitty mpv nvim fish matugen wallust qt6ct wlougout wal
+stow dunst fastfetch fish git gtk-3.0 gtk-4.0 hypr kitty matugen mpv nvim qt6ct rofi starship swaync tmux wal wallust waybar waypaper wlogout xsettingsd
 ```
 
 ### 5. Ganti shell ke Fish (opsional)
 ```bash
-chsh -s /bin/fish
+chsh -s $(which fish)
 ```
 
 ## 🖼️ Tema & Wallpaper
