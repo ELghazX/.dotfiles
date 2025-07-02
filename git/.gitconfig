@@ -1,0 +1,11 @@
+[user]
+	name = ELghazX
+	email = 2309106041@student.unmul.ac.id
+[core]
+	editor = code --wait
+[diff]
+	tool = default-difftool
+[difftool "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[credential]
+	helper = store
