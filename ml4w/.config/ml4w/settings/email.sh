@@ -1,1 +1,1 @@
-evolution
+mailspring --password-store=gnome-libsecret
