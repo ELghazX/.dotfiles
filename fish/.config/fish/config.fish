@@ -40,4 +40,11 @@ alias cpp="g++ \$argv  && ./a.out"
 alias tidur="sudo shutdown -h +60"
 alias lg="lazygit"
 alias t="tmux"
-alias furina="furina@52.175.30.127"
+alias furina="ssh furina@52.175.30.127"
+
+# pnpm
+set -gx PNPM_HOME "/home/elghaz/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
