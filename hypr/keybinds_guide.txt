@@ -1,0 +1,83 @@
+# Panduan Keybinds Hyprland (Caelestia)
+
+Panduan ini dibuat berdasarkan file `keybinds.conf` dan `variables.conf` Anda.
+
+---
+
+## Manajemen Jendela
+
+- `Super + Q` : Tutup jendela yang aktif.
+- `Super + Shift + Q` : Paksa tutup aplikasi yang aktif (semua instancenya).
+- `Super + T` : Toggle mode floating untuk jendela aktif.
+- `Super + F` : Toggle mode fullscreen.
+- `Super + Shift + F` : Toggle mode fullscreen dengan border.
+- `Super + P` : Pin/Unpin jendela (tetap di atas semua jendela lain).
+- `Super + R` : Tukar layout split (vertikal/horizontal).
+- `Super + H` / `J` / `K` / `L` : Pindah fokus jendela (kiri/bawah/atas/kanan).
+- `Super + Shift + H` / `J` / `K` / `L` : Pindah jendela (kiri/bawah/atas/kanan).
+- `Super + =` : Tambah rasio split.
+- `Super + -` : Kurangi rasio split.
+- `Super + Z` atau `Super + Klik Kiri (Tahan & Geser)` : Pindahkan jendela.
+- `Super + X` atau `Super + Klik Kanan (Tahan & Geser)` : Ubah ukuran jendela.
+- `Ctrl + Super + \` : Pusatkan jendela di tengah layar.
+- `Ctrl + Super + Alt + \` : Ubah ukuran jendela ke 55% x 70% dan pusatkan.
+- `Super + Alt + \` : Mode Picture-in-Picture (PIP) untuk jendela.
+
+---
+
+## Manajemen Workspace
+
+- `Super + [1-9, 0]` : Pindah ke workspace 1-10.
+- `Super + Shift + [1-9, 0]` : Pindahkan jendela aktif ke workspace 1-10.
+- `Ctrl + Super + [1-9, 0]` : Pindah ke grup workspace 1-10.
+- `Ctrl + Super + Alt + [1-9, 0]` : Pindahkan jendela aktif ke grup workspace 1-10.
+- `Ctrl + Super + Panah Kanan/Kiri` : Pindah ke workspace berikutnya/sebelumnya.
+- `Super + Page Down/Up` : Pindah ke workspace berikutnya/sebelumnya.
+- `Super + Scroll Bawah/Atas` : Pindah ke workspace berikutnya/sebelumnya.
+- `Super + S` : Toggle special workspace.
+- `Super + Alt + S` : Pindahkan jendela aktif ke special workspace.
+
+---
+
+## Grup Jendela
+
+- `Alt + Tab` : Siklus ke jendela berikutnya dalam grup.
+- `Shift + Alt + Tab` : Siklus ke jendela sebelumnya dalam grup.
+- `Super + ,` : Toggle mode grup untuk jendela aktif.
+- `Super + U` : Keluarkan jendela dari grup.
+- `Super + Shift + ,` : Kunci/Buka grup jendela (mencegah jendela lain masuk).
+
+---
+
+## Peluncur Aplikasi & Utilitas
+
+- `Super` : Buka launcher aplikasi (Caelestia launcher).
+- `Super + Return` : Buka Terminal (kitty).
+- `Super + B` : Buka Browser (zen-browser).
+- `Super + E` : Buka File Explorer (nautilus).
+- `Super + C` : Buka Editor Kode (code).
+- `Super + Delete` : Buka menu sesi (logout, restart, shutdown).
+- `Super + Ctrl + L` : Kunci layar.
+- `Super + Tab` : Tampilkan semua panel/bar.
+- `Print Screen` : Screenshot layar penuh (simpan ke clipboard).
+- `Super + Shift + S` : Screenshot area tertentu (mode freeze).
+- `Super + Shift + Alt + S` : Screenshot area tertentu (langsung).
+- `Super + V` : Tampilkan riwayat clipboard.
+- `Super + .` : Buka pemilih emoji.
+- `Super + Shift + C` : Buka color picker (pilih warna di layar).
+
+---
+
+## Kontrol Media & Sistem
+
+- `Ctrl + Super + Spasi` atau `XF86AudioPlay` : Play/Pause media.
+- `Ctrl + Super + =` atau `XF86AudioNext` : Media berikutnya.
+- `Ctrl + Super + -` atau `XF86AudioPrev` : Media sebelumnya.
+- `XF86AudioMute` atau `Super + Shift + M` : Mute/Unmute volume.
+- `XF86AudioRaiseVolume` : Naikkan volume.
+- `XF86AudioLowerVolume` : Turunkan volume.
+- `XF86MonBrightnessUp` : Naikkan kecerahan layar.
+- `XF86MonBrightnessDown` : Turunkan kecerahan layar.
+- `Ctrl + Shift + Escape` : Toggle monitor sistem.
+- `Super + M` : Toggle aplikasi musik.
+- `Super + D` : Toggle aplikasi komunikasi.
