@@ -1,4 +1,5 @@
-![desktop](.assets/Screenshot_2025-07-02_22-56-23.png)
+![desktop](.assets/ss.png)
+
 # 🛠️ ElghazX's Dotfiles
 
 Konfigurasi sistem Linux milik pribadi yang digunakan di **CachyOS** dengan window manager **Hyprland**. Setup ini awalnya berbasis dari proyek [ml4w (My Linux 4 Work)](https://github.com/mylinuxforwork/dotfiles.git), lalu dimodifikasi sesuai dengan preferensiku sendiri.
@@ -41,6 +42,7 @@ Berikut beberapa direktori penting dalam repo ini:
 ├── wal/ → template untuk wal
 └── ...
 ```
+
 ---
 
 ## 🚀 Setup dari Awal
@@ -50,6 +52,7 @@ Berikut beberapa direktori penting dalam repo ini:
 Install CachyOS (atau distro Arch-based lainnya seperti Arch, EndeavourOS, Manjaro). Setelah sistem terpasang:
 
 Update Repository
+
 ```bash
 sudo pacman -Syu
 ```
@@ -57,31 +60,40 @@ sudo pacman -Syu
 Pastikan kamu sudah menginstal package dasar
 
 Install Hyprland
+
 ```bash
 # Paket utama
-sudo pacman -S hyprland 
+sudo pacman -S hyprland
 ```
 
 Install git
+
 ```bash
 sudo pacman -S git base-devel
 ```
+
 ### 2. Clone Dotfiles
+
 ```bash
 git clone https://github.com/ElghazX/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
+
 ### 3. Install Dependencies
+
 Install package manager buat AUR, bisa Paru atau Yay
 
-Paru: 
+Paru:
+
 ```bash
 sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/paru.git ~/paru
 cd ~/paru
 makepkg -si
 ```
+
 Install Semua paket yang dibutuhkan
+
 ```bash
 paru -S --noconfirm \
   wget unzip gum rsync git figlet xdg-user-dirs \
@@ -101,33 +113,41 @@ paru -S --noconfirm \
   checkupdates-with-aur loupe power-profiles-daemon \
   python-pywalfox
 ```
+
 Install Tools via `cargo`
+
 ```bash
 cargo install matugen
 cargo install wallust
 ```
 
 ### 4. Salin atau Symlink Config
+
 ```bash
-sudo pacman -S stow 
+sudo pacman -S stow
 ```
+
 Kemudian pakai stow untuk mengelola package
+
 ```bash
 stow dunst fastfetch fish git gtk-3.0 gtk-4.0 hypr kitty matugen mpv nvim qt6ct rofi starship swaync tmux wal wallust waybar waypaper wlogout xsettingsd
 ```
 
 ### 5. Ganti shell ke Fish (opsional)
+
 ```bash
 chsh -s $(which fish)
 ```
 
 ## 🖼️ Tema & Wallpaper
+
 - Wallpaper dikontrol menggunakan waypaper
 - Tema warna otomatis menggunakan matugen + wallust
 - Notifikasi ditangani swaync dan dunst
 - Tampilan Qt diatur melalui qt6ct
 
 ## 🔧 Tips Tambahan
+
 - Jika bar tidak muncul → pastikan waybar dijalankan dari autostart Hyprland
 - Jika tema tidak berubah otomatis → cek apakah matugen dan wallust terpasang dan dipanggil di script wallpaper
 - Tambahkan ~/.config/hypr/autostart.conf jika perlu script startup
