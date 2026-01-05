@@ -24,7 +24,8 @@ error_symbol = '[](red)'
 [username]
 style_user = 'green bold'
 style_root = 'black bold'
-format = '󰣇 [$user]($style) [Sedang Ngodonf](yellow) [on](purple) '
+# format = '󰣇 [$user]($style) [Sedang Ngodonf](yellow) [on](purple) '
+format = ' [$user]($style) [Sedang Ngodonf](yellow) [on](purple) '
 disabled = false
 show_always = true
 aliases = { "corpuser034g" = "ELghaz" }

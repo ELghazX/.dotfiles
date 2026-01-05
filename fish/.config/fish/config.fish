@@ -46,7 +46,7 @@ if status is-interactive
     alias t="tmux"
     # Custom colours
     #
-    cat ~/.local/state/caelestia/sequences.txt 2>/dev/null
+    cat ~/.config/fish/color.txt 2>/dev/null
 
     # For jumping between prompts in foot terminal
     function mark_prompt_start --on-event fish_prompt

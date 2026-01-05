@@ -1,3 +1,7 @@
+if vim.loader then
+	vim.loader.enable()
+end
+
 require("core.options")
 require("core.keymaps")
 require("core.autocmds")
@@ -14,19 +18,29 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Set up plugins
+
 require("lazy").setup({
-	require("plugins.neotree"),
-	require("plugins.colorscheme"),
-	require("plugins.bufferline"),
-	require("plugins.lualine"),
-	require("plugins.treesitter"),
-	require("plugins.telescope"),
-	require("plugins.lsp"),
-	require("plugins.autocompletions"),
-	require("plugins.nonels"), -- formatter
-	require("plugins.indent"),
-	require("plugins.templ"),
-	require("plugins.gitsigns"),
-	require("plugins.misc"),
-	require("plugins.comment"),
+	spec = {
+		{ import = "plugins" },
+	},
+	defaults = {
+		lazy = false,
+	},
 })
+--
+-- require("lazy").setup({
+-- 	-- require("plugins.neotree"),
+-- 	require("plugins.colorscheme"),
+-- 	require("plugins.bufferline"),
+-- 	require("plugins.lualine"),
+-- 	require("plugins.treesitter"),
+-- 	require("plugins.telescope"),
+-- 	require("plugins.lsp"),
+-- 	require("plugins.autocompletions"),
+-- 	require("plugins.nonels"), -- formatter
+-- 	require("plugins.indent"),
+-- 	require("plugins.templ"),
+-- 	require("plugins.gitsigns"),
+-- 	require("plugins.misc"),
+-- 	require("plugins.comment"),
+-- })
