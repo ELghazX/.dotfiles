@@ -39,3 +39,13 @@ vim.diagnostic.config({
 		vim.cmd("highlight DiagnosticVirtualText guibg=NONE")
 	end,
 })
+
+-- Set indentation to 2 spaces for web development files
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "javascript", "typescript", "javascriptreact", "typescriptreact", "css", "html" },
+	callback = function()
+		vim.opt_local.shiftwidth = 2
+		vim.opt_local.softtabstop = 2
+	end,
+	desc = "Set indentation for web dev files",
+})
