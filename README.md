@@ -1,39 +1,48 @@
 ![desktop](.assets/ss.png)
 
-# ElghazX's Dotfiles
+# .dotfiles
 
-Personal Linux configuration with **Hyprland** window manager.
+My personal configuration files.
 
-## Features
+## Configurations
 
-- **Hyprland** - Wayland compositor
-- **Auto theming** - Colors from wallpaper using `matugen` & `wallust`
-- **Rofi** - Application launcher
-- **Waybar** - Status bar
-- **Kitty** + **Starship** - Terminal setup
-- **Neovim** - Text editor
-- **Fish** - Shell
-- **Swaync** - Notifications
-- **Fastfetch** - System info
-- **Tmux** - Terminal multiplexer
-- **MPV** - Media player
-- **Spicetify** - Spotify theming
+- caelestia
+- fastfetch
+- fish
+- git
+- hypr
+- kitty
+- matugen
+- ml4w
+- mpv
+- nvim
+- pacseek
+- qt6ct
+- rofi
+- skhd
+- spicetify
+- starship
+- swaync
+- tmux
+- uwsm
+- wal
+- wallust
+- waybar
+- waypaper
+- wlogout
+- xsettingsd
+- yabai
+- zsh
 
 ## Installation
 
-1. Install dependencies:
-```bash
-paru -S hyprland waybar rofi-wayland kitty neovim fish starship swaync matugen wallust fastfetch tmux mpv spicetify-cli stow
-```
-
-2. Clone and setup:
+1. Clone the repository:
 ```bash
 git clone https://github.com/ElghazX/.dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-stow hypr waybar rofi kitty nvim fish starship swaync fastfetch tmux mpv spicetify matugen wallust wal waypaper wlogout qt6ct xsettingsd
 ```
 
-3. Change shell (optional):
+2. Stow the configs:
 ```bash
-chsh -s $(which fish)
+cd ~/.dotfiles
+stow caelestia fastfetch fish git hypr kitty matugen ml4w mpv nvim pacseek qt6ct rofi skhd spicetify starship swaync tmux uwsm wal wallust waybar waypaper wlogout xsettingsd yabai zsh
 ```
